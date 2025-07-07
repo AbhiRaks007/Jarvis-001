@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jarvis Bot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="jarvis-container">
+    <div class="jarvis-globe">
+      <span class="jarvis-title">JARVIS</span>
+      <div class="globe-effect"></div>
+    </div>
+    <div class="chat-box" id="chatBox"></div>
+    <div class="input-row">
+      <input type="text" id="messageInput" placeholder="Type a message..." />
+      <button id="sendBtn">Send</button>
+      <button id="voiceBtn" title="Voice Input">
+        <span id="micIcon">🎤</span>
+      </button>
+      <input type="file" id="mediaInput" accept="image/*,audio/*,video/*" style="display:none;" />
+      <button id="mediaBtn" title="Send Media">📎</button>
+    </div>
+    <button id="toggleMode">🌙</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
